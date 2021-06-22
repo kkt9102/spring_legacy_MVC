@@ -1,4 +1,4 @@
-## porm.xml 1Â÷ ¼öÁ¤
+## porm.xml 1ì°¨ ìˆ˜ì •
 ``` html
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -13,17 +13,21 @@
 		<!-- before -->
 		<!-- <java-version>1.6</java-version> -->
 		<!-- before -->
+		
 		<!-- after -->
 		<java-version>11</java-version>
 		<!-- after -->
+		
 		<!-- before -->
 		<!-- <org.springframework-version>3.1.1.RELEASE</org.springframework-version> -->
 		<!-- before -->
+		
 		<!-- after -->
 		<org.springframework-version>5.2.8.RELEASE</org.springframework-version>
+		<!-- after -->
+		
 		<org.aspectj-version>1.6.10</org.aspectj-version>
 		<org.slf4j-version>1.6.6</org.slf4j-version>
-		<!-- after -->
 	</properties>
 	<dependencies>
 		<!-- Spring -->
@@ -151,18 +155,23 @@
                 <!-- before -->
                 <!-- <version>2.5.1</version> -->
                 <!-- before -->
+                
                 <!-- after -->
                 <version>3.5.1</version>
                 <!-- after -->
+                
                 <configuration>
+                
                     <!-- before -->
                     <!-- <source>1.6</source> -->
                     <!-- <target>1.6</target> -->
                     <!-- before -->
+                    
                     <!-- after -->
                     <source>11</source>
                     <target>11</target>
                     <!-- after -->
+                    
                     <compilerArgument>-Xlint:all</compilerArgument>
                     <showWarnings>true</showWarnings>
                     <showDeprecation>true</showDeprecation>

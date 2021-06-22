@@ -1,10 +1,10 @@
 # spring_legacy_MVC
 (sample)Spring_legacy_MVC_project
 
-## 1. ÇÁ·ÎÁ§Æ® ÃÖÃÊ »ý¼º
+## 1. í”„ë¡œì íŠ¸ ìµœì´ˆ ìƒì„±
 	- New > Spring > Spring Legacy > Spring MVC 
 ---
 
-## 2. porm.xml ¼öÁ¤
-[ÄÚµå º¸·¯°¡±â](porm.xml_change.md)
-	- º¯°æµÈ ºÎºÐÀº µû·Î Ã¼Å©µÇÀÖÀ½.
+## 2. porm.xml ìˆ˜ì •
+[ì½”ë“œ ë³´ëŸ¬ê°€ê¸°](porm.xml_change.md)
+	- ë³€ê²½ëœ ë¶€ë¶„ì€ ì²´í¬í•´ë†“ìŒ
