@@ -5,3 +5,7 @@
 <%@ page session="false" %>
 
 <%@ include file="../include/header.jsp" %>
+
+<c:set var="title" value="게시물 리스트" />
+
+<div>${title}</div>

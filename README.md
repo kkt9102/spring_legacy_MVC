@@ -59,3 +59,26 @@
 <br>
 <p style="padding-bottom:30px;">3. 클레스 생성 완료</p>
 </div>
+
+---
+
+## 6. ArticleController를 이용해 추가 페이지 출력 확인
+	- src > main > webapp > views > article(폴더추가) > list.jsp 생성
+```java
+	package com.crud.controller;
+	
+	import org.springframework.stereotype.Controller;
+	import org.springframework.web.bind.annotation.GetMapping;
+	import org.springframework.web.bind.annotation.RequestMapping;
+	
+	
+	@Controller
+	@RequestMapping("/article/")
+	public class ArticleController {
+		
+		@GetMapping("/list")
+		public String showList() {
+			return "article/list";
+		}
+	}
+```
