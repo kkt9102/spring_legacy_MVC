@@ -20,7 +20,7 @@
 <img src="https://kkt9102.github.io/img2/spring_legacy_ver_2/3.png" style="width:750px;">
 <br>
 <p style="padding-bottom:30px;">3. local로 운영할 프로젝트를 제외한 다른 프로젝트는 'remove'로 제외</p>
-
+</div>
 ---
 
 ## 4. 한글 필터링 추가
@@ -43,3 +43,19 @@
 	<c:out value="${title}" />
 	<div>${title}</div>
 ```
+
+---
+
+## 5. ArticleController(게시글 관련 컨트롤러) 생성
+	- src > main > java > com > crud > controller 안에 ArticleController.java 생성
+<div>
+<img src="https://kkt9102.github.io/img2/spring_legacy_ver_2/4.png" style="width:750px;">
+<br>
+<p style="padding-bottom:30px;">1. 해당 프로젝트에서 'com.crud.controller' 우클릭 후 New > Class'를 클릭하여 클레스 생성으로 이동</p>
+<img src="https://kkt9102.github.io/img2/spring_legacy_ver_2/5.png" style="width:750px;">
+<br>
+<p style="padding-bottom:30px;">2. 사진과 같이 클레스명에'ArticleController' 입력</p>
+<img src="https://kkt9102.github.io/img2/spring_legacy_ver_2/6.png" style="width:750px;">
+<br>
+<p style="padding-bottom:30px;">3. 클레스 생성 완료</p>
+</div>
