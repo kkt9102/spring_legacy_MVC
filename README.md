@@ -28,4 +28,18 @@
 
 ---
 
-## 5.
+## 5. 기본 include 준비
+	-home.jsp에 각 페이지별 식별을 위한 임시 title 설정
+``` html
+	<!-- include(공통)파일 연결해주기 -->
+	<%@ include file="include/header.jsp" %>
+```
+```html
+	<!-- 임시 페이지 구분용 title 달기 -->
+	<!-- 변수 설정 -->
+	<c:set var="title" value="메인페이지" />
+
+	<!-- 변수값 출력 -->
+	<c:out value="${title}" />
+	<div>${title}</div>
+```

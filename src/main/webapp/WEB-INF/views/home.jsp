@@ -12,7 +12,7 @@
 <!-- </h1> -->
 <%@ include file="include/header.jsp" %>
 
-<c:set var="${title}" value="메인페이지" />
+<c:set var="title" value="메인페이지" />
 
 <c:out value="${title}" />
 <div>${title}</div>
