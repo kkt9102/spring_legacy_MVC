@@ -301,3 +301,9 @@
 ---
 
 ## 26. ArticleMapperTests.java를 통한 테스트
+
+
+---
+
+## 00. spring MVC 에 stylesheet 연결 방법
+[설명 잘되있는 블로그 보러가기](https://marindie.github.io/spring/Spring-Include-Resource-KR/#toc3)
