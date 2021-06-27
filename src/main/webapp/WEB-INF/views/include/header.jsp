@@ -5,6 +5,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Spring Legacy CRUD</title>
+<%@ include file="inculdestylesheet.jsp" %>
 </head>
 <body>
+
+<nav class="menu_box_1">
+	<ul class="flex">
+		<li><a href="">Board</a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+	</ul>
+</nav>

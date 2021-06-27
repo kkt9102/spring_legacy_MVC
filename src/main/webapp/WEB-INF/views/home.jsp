@@ -14,7 +14,9 @@
 
 <c:set var="title" value="메인페이지" />
 
-<c:out value="${title}" />
+<!-- ver_1 -->
+<%-- <c:out value="${title}" /> --%>
+<!-- ver_2 -->
 <div>${title}</div>
 <P>  The time on the server is ${serverTime}. </P>
 </body>
