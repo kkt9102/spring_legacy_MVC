@@ -134,4 +134,6 @@
 
 ---
 
-## 12. 
+## 12. root-context.xml 에 db접속을 위한 코드 작성
+	- src > main > webapp > WEB-INF > spring > root-context.xml 에 코드 추가
+[코드 보러가기](
