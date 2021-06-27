@@ -306,9 +306,10 @@
 ## 26. ArticleMapperTests.java를 통한 테스트
 [코드 보러가기](markdown_list/ArticleMapperTests.java_create.md)
 
-	- 테스ㅡ코드로 테스트 실행 후 데이터가 들어갔는지 확인
+	- 테스트코드로 테스트 실행 후 데이터가 들어갔는지 확인
 
 ---
 
+## 27. 
 ## 00. spring MVC 에 stylesheet 연결 방법
 [설명 잘되있는 블로그 보러가기](https://marindie.github.io/spring/Spring-Include-Resource-KR/#toc3)
