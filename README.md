@@ -147,15 +147,21 @@
 ---
 
 ## 14. porm.xml에 mybatis 라이브러리 추가
-[코드 보러가기](markdown_list/porm.xml_mybatis_add.md)
+[코드 보러가기](markdown_list/porm.xml_mybatis_add.md)  
 	- 변경된 부분은 체크해놓음
 	
 ---
 
 ## 15. root-context.xml에 SQLSessionFactory 추가
-[코드 보러기가](markdown_list/root-context.xml_add_SQLSessionFactory.md)
+[코드 보러기가](markdown_list/root-context.xml_add_SQLSessionFactory.md)  
 	- 변경된 부분은 체크해놓음
 	
 ---
 
-## 16. 
+## 16. DataSourceTest.java를 통한 SQLSessionFactory 테스트
+[코드 보러기가](markdown_list/DataSourceTest.xml_add_session.md)  
+	- 변경된 부분은 체크해놓음
+	
+---
+
+## 17. 
