@@ -250,3 +250,33 @@
 	<br>
 	<p style="padding-bottom:30px;">2. 위의 사진과 같이 ArticleMapper 입력 후 생성</p>
 </div>
+
+---
+
+## 23. ArticleMapper.java에 게시글 작성을 위한 코드 추가
+```java
+	package com.crud.mapper;
+	
+	import com.crud.model.ArticleVO;
+	
+	public interface ArticleMapper {
+		// 게시글 등록
+		public void doWrite(ArticleVO article);
+	}
+```
+
+<div>
+	<a href="https://myjamong.tistory.com/150" target="_blacnk">참고 : class와 interface의 차이를 보기쉽게 설명한 블로그</a>
+</div>
+---
+
+## 24. ArticleMapper.xml 추가하기
+<div>
+	<img src="https://kkt9102.github.io/img2/spring_legacy_ver_2/22.png" style="width:750px;">
+	<br>
+	<p style="padding-bottom:30px;">ArticleMapper.java 와 같은 경로, 같은 파일명으로 xml파일을 생성해준다.(위의 사진 참조)</p>
+</div>
+
+---
+
+## 25. 

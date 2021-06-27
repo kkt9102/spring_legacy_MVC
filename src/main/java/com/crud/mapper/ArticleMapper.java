@@ -1,5 +1,8 @@
 package com.crud.mapper;
 
-public class ArticleMapper {
+import com.crud.model.ArticleVO;
 
+public interface ArticleMapper {
+	// 게시글 등록
+	public void doWrite(ArticleVO article);
 }
