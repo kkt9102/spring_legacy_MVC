@@ -113,3 +113,25 @@
 ## 10. 커넥션 풀(HikariCP) 라이브러리 추가 및 설정
 [코드 보러가기](markdown_list/porm.xml_hikari_add.md)  
 	- 변경된 부분은 체크해놓음
+	
+---
+
+## 11. JDBCTest.java를 통한 DB 접속 테스트
+<div>
+	<img src="https://kkt9102.github.io/img2/spring_legacy_ver_2/7.png" style="width:750px;">
+	<br>
+	<p style="padding-bottom:30px;">1. src > test > java > com > crud > persistence(폴더 생성) > JDBCTest.java 추가</p>
+	<p style="padding-bottom:30px;">2. JDBCTest.java에 테스트를 위한 코드 작성</p>
+	<img src="https://kkt9102.github.io/img2/spring_legacy_ver_2/8.png" style="width:750px;">
+	<br>
+	<p style="padding-bottom:30px;">2. 코드 작성 후 테스트 진행</p>
+	<img src="https://kkt9102.github.io/img2/spring_legacy_ver_2/9.png" style="width:750px;">
+	<br>
+	<p style="padding-bottom:30px;">3. 테스트 진행 후 정상작동 확인</p>
+</div>
+
+[코드 보러가기](markdown_list/JDBCTest.java_write.md)
+
+---
+
+## 12. 
