@@ -152,4 +152,10 @@
 	
 ---
 
-## 15. 
+## 15. root-context.xml에 SQLSessionFactory 추가
+[코드 보러기가](markdown_list/root-context.xml_add_SQLSessionFactory.md)
+	- 변경된 부분은 체크해놓음
+	
+---
+
+## 16. 
