@@ -167,3 +167,52 @@
 ## 17. DB 작성
 [코드 보러가기](markdown_list/sql_ver_1.md)
 	- 작성된 sql문은 이 프로젝트 기준
+	
+---
+
+## 18. 게시판 등록 기능을 위한 기본개념 잡기
+<div>
+	<p style="font-size:1.4rem; text-align: center;">CRUD 기본 작동원리</p>
+	<img style="width:750px;" title="출처:https://kimvampa.tistory.com/163?category=843151" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FszJlt%2FbtqXrD9y46b%2FhdPCNUwHOnSn9Vkpp4Bx6k%2Fimg.png" />
+	<br>
+	<a href="https://kimvampa.tistory.com/163?category=843151" target="_blank">출처 블로그 바로가기</a>
+	<br>
+	<strong>간단한 설명</strong>
+	<p>1. 사용자가 .jsp로 접속하여 화면을 요청</p>
+	<p>2. 요청받은 정보가 Controller가 요청을 접수 후 해당 요청을 Service에게 전달</p>
+	<p>3. Service는 받은 요청을 DAO에게 전달</p>
+	<p>4. DAO는 요청받은 정보를 DB에서 가져와 다시 Service에게 전달</p>
+	<p>5. Service는 받은 정보를 다시 Controller에게 전달한다.</p>
+	<p>6. Controller는 받은 정보를 jsp에게 전달하여 최종적으로 사용자에게 보여진다</p>
+	<div style="transform:scale(0.2);">기본원리를 자꾸 까먹는다... 기억해야하는데... 아니 익숙해질때가 됬는데... ㅠㅠㅠ</div>
+</div>
+
+---
+
+## 19. 게시판 등록 기능을 위한 작업_1
+	- src > main > java > com > crud > mapper 생성
+	- src > main > java > com > crud > model 생성
+	- src > main > java > com > crud > service 생성
+<div>
+	<img src="https://kkt9102.github.io/img2/spring_legacy_ver_2/10.png" style="width:750px;">
+	<br>
+	<p style="padding-bottom:30px;">1. com.crud.controller 를 우클릭하여 'NEW > Pakage' 를릭</p>
+	<img src="https://kkt9102.github.io/img2/spring_legacy_ver_2/11.png" style="width:750px;">
+	<br>
+	<p style="padding-bottom:30px;">2. 위의 사진처럼 각각 필요한 패키지명 입력 후 생성</p>
+	<img src="https://kkt9102.github.io/img2/spring_legacy_ver_2/12.png" style="width:750px;">
+	<br>
+	<p style="padding-bottom:30px;">3. 필요한 패키지 (mapper,model,service) 생성이 완료된 후의 모습</p>
+</div>
+
+---
+
+## 20. com.crud.model에 ArticleVO.java 추가
+<div>
+	<img src="https://kkt9102.github.io/img2/spring_legacy_ver_2/13.png" style="width:750px;">
+	<br>
+	<p style="padding-bottom:30px;">1. com.crud.model 를 우클릭하여 'NEW > Class' 를릭</p>
+	<img src="https://kkt9102.github.io/img2/spring_legacy_ver_2/14.png" style="width:750px;">
+	<br>
+	<p style="padding-bottom:30px;">2. 위의 사진처럼 ArticleVO를 입력 후 생성</p>
+</div>
