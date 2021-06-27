@@ -146,4 +146,10 @@
 
 ---
 
-## 14. 
+## 14. porm.xml에 mybatis 라이브러리 추가
+[코드 보러가기](markdown_list/porm.xml_mybatis_add.md)
+	- 변경된 부분은 체크해놓음
+	
+---
+
+## 15. 
