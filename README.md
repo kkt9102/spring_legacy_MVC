@@ -205,7 +205,7 @@
 	<p style="padding-bottom:30px;">3. 필요한 패키지 (mapper,model,service) 생성이 완료된 후의 모습</p>
 	<br>
 	<p>root-context.xml에 생성한 패키지 인식을 위한 경로 추가</p>
-	<a href="">추가한 코드 보러가기</a>
+	<a href="https://github.com/kkt9102/spring_legacy_MVC/commit/f937a9c6d39b876137e967dac63b73d3a37c840f#diff-ff64cd32bff477b80394c42a5718de4ca41f41b30a5a888c6eca37140c19b3fd">추가한 코드 보러가기(패키지 인식경로)</a>
 </div>
 
 ---
