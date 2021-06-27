@@ -216,3 +216,29 @@
 	<br>
 	<p style="padding-bottom:30px;">2. 위의 사진처럼 ArticleVO를 입력 후 생성</p>
 </div>
+
+---
+
+## 21. ArticleVO.java 안에 class 생성
+<div>
+	<img src="https://kkt9102.github.io/img2/spring_legacy_ver_2/15.png" style="width:750px;">
+	<br>
+	<p style="padding-bottom:30px;">1. ArticleVO.java에 DB에 생성한 컬럼정보 입력</p>
+	<img src="https://kkt9102.github.io/img2/spring_legacy_ver_2/16.png" style="width:750px;">
+	<br>
+	<img src="https://kkt9102.github.io/img2/spring_legacy_ver_2/17.png" style="width:750px;">
+	<br>
+	<p style="padding-bottom:30px;">2. 'Getters and Setters' 생성</p>
+	<br>
+	<img src="https://kkt9102.github.io/img2/spring_legacy_ver_2/18.png" style="width:750px;">
+	<br>
+	<img src="https://kkt9102.github.io/img2/spring_legacy_ver_2/19.png" style="width:750px;">
+	<br>
+	<p style="padding-bottom:30px;">3. 'toString' 생성</p>
+</div>
+
+[코드 보러가기](markdown_list/ArticleVO.java_.md)
+
+---
+
+## 22. 
