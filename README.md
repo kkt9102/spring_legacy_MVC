@@ -279,4 +279,25 @@
 
 ---
 
-## 25. 
+## 25. ArticleMapper.xml 코드 작성
+```java
+	<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd.mybatis-3-mapper.dtd">
+		
+		<mapper namespace="com.curd.mapper.ArticleMapper">
+		<!-- 게시글 작성 -->
+		<insert id="doWrite">
+			INSERT INTO crud_article
+			SET title = #{title},
+			body = #{body},
+			writer = #{writer}
+		</insert>
+		</mapper>
+```
+	- ArticleMapper.xml에 게시글 생성 시 필요한 sql문을 입력한다.
+
+---
+
+## 26. ArticleMapperTests.java를 통한 테스트
