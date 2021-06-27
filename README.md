@@ -136,4 +136,8 @@
 
 ## 12. root-context.xml 에 db접속을 위한 코드 작성
 	- src > main > webapp > WEB-INF > spring > root-context.xml 에 코드 추가
-[코드 보러가기](
+[코드 보러가기](https://github.com/kkt9102/spring_legacy_MVC/commit/652f5329a6c0c3d6cfaac00ae4de47930b524ee6)
+
+---
+
+## 13. DataSourceTest.java 를 통한 DB연결 테스트
