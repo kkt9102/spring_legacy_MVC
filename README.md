@@ -102,3 +102,14 @@
 ## 8. 기존 log4j 제거 혹은 주석 처리후 다른 버전 추가, spring-test 추가
 [코드 보러가기](markdown_list/porm.xml_log4j_edit.md)  
 	- 변경된 부분은 체크해놓음
+	
+---
+
+## 9. junit버전 변경
+	- porm.xml 에 junit 라이브러리버전을 4.7에서 4.12로 변경
+	
+---
+
+## 10. 커넥션 풀(HikariCP) 라이브러리 추가 및 설정
+[코드 보러가기](markdown_list/porm.xml_hikari_add.md)  
+	- 변경된 부분은 체크해놓음
