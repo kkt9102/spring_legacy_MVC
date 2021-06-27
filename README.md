@@ -203,6 +203,9 @@
 	<img src="https://kkt9102.github.io/img2/spring_legacy_ver_2/12.png" style="width:750px;">
 	<br>
 	<p style="padding-bottom:30px;">3. 필요한 패키지 (mapper,model,service) 생성이 완료된 후의 모습</p>
+	<br>
+	<p>root-context.xml에 생성한 패키지 인식을 위한 경로 추가</p>
+	<a href="">추가한 코드 보러가기</a>
 </div>
 
 ---
@@ -301,7 +304,9 @@
 ---
 
 ## 26. ArticleMapperTests.java를 통한 테스트
+[코드 보러가기](markdown_list/ArticleMapperTests.java_create.md)
 
+	- 테스ㅡ코드로 테스트 실행 후 데이터가 들어갔는지 확인
 
 ---
 
