@@ -189,7 +189,7 @@
 
 ---
 
-## 19. 게시판 등록 기능을 위한 작업_1
+## 19. 게시판 등록 기능을 위한 기초 작업
 	- src > main > java > com > crud > mapper 생성
 	- src > main > java > com > crud > model 생성
 	- src > main > java > com > crud > service 생성
@@ -241,4 +241,12 @@
 
 ---
 
-## 22. 
+## 22. com.crud.maooer에 ArticleMapper.java 추가
+<div>
+	<img src="https://kkt9102.github.io/img2/spring_legacy_ver_2/20.png" style="width:750px;">
+	<br>
+	<p style="padding-bottom:30px;">1. com.crud.mapper 를 우클릭하여 'NEW > Class' 를릭</p>
+	<img src="https://kkt9102.github.io/img2/spring_legacy_ver_2/21.png" style="width:750px;">
+	<br>
+	<p style="padding-bottom:30px;">2. 위의 사진과 같이 ArticleMapper 입력 후 생성</p>
+</div>
