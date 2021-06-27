@@ -6,7 +6,7 @@
 ---
 
 ## 2. porm.xml 수정
-[코드 보러가기](porm.xml_change.md)  
+[코드 보러가기](markdown_list/porm.xml_change.md)  
 	- 변경된 부분은 체크해놓음
 	
 ## 3. 여러 프로젝트가 있을 때 local용 tomcat 설정
@@ -82,3 +82,23 @@
 		}
 	}
 ```
+
+---
+
+## 7. porm.xml에 mysql연결을 위한 라이브러리 추가
+	- porm.xml 에 해당 라이브러리 추가
+	```java
+	<!-- mysql -->
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.23</version>
+		</dependency>
+	```
+	
+---
+
+## 8. 기존 log4j 제거 혹은 주석 처리후 다른 버전 추가, spring-test 추가
+[코드 보러가기](markdown_list/porm.xml_log4j_edit.md)  
+	- 변경된 부분은 체크해놓음
