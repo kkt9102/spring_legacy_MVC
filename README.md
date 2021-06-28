@@ -347,5 +347,50 @@
 		}
 	}
 ```
+
+---
+
+## 29. ArticleController.java에 게시물 리스트 및 게시물 작성 페이지 이동을 위한 메서드 등록
+```java
+	package com.crud.controller;
+
+	import org.slf4j.Logger;
+	import org.slf4j.LoggerFactory;
+	import org.springframework.stereotype.Controller;
+	import org.springframework.web.bind.annotation.GetMapping;
+	import org.springframework.web.bind.annotation.PostMapping;
+	import org.springframework.web.bind.annotation.RequestMapping;
+	
+	@Controller
+	@RequestMapping("/article/*")
+	public class ArticleController {
+	
+	private static final Logger log = LoggerFactory.getLogger(ArticleController.class);
+	
+	// 게시글 리스트 페이지 이동
+	@GetMapping("/list")
+	public void showList() {
+		return;
+	}
+	
+	// 게시글 생성 페이지 이동
+	@GetMapping("/write")
+	public void showWrite() {
+		return;
+	}
+	// 게시글 생성 액션
+	@PostMapping("/doWirte")
+	public void doWrite() {
+		
+	}
+}
+```
+
+---
+
+## 30. 게시글 생성 페이지 (write.jsp) 간단한 퍼블리싱 작업
+	- src > main > webapp > WEB-INF > views > article > list.jsp 추가
+	- src > main > webapp > WEB-INF > views > article > wrtie.jsp 추가
+**파일 경로의 경우 ArticleController와 같이 맞춰우어야한다. (@RequestMapping 이 article이라면 article 폴더 안에 해당 jsp 생성)**
 ## 00. spring MVC 에 stylesheet 연결 방법
 [설명 잘되있는 블로그 보러가기](https://marindie.github.io/spring/Spring-Include-Resource-KR/#toc3)

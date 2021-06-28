@@ -8,4 +8,8 @@
 
 <c:set var="title" value="게시물 리스트" />
 
-<div>${title}</div>
+<section id="body">
+	<div>${title}</div>
+	
+	<a href="write">새 글쓰기</a>
+</section>
