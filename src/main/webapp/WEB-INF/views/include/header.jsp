@@ -12,8 +12,8 @@
 
 <nav class="menu_box_1">
 	<ul class="flex">
-		<li><a href="">Board</a></li>
-		<li><a href=""></a></li>
+		<li><a href="/">Home</a></li>
+		<li><a href="/article/list">Board</a></li>
 		<li><a href=""></a></li>
 	</ul>
 </nav>

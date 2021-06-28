@@ -310,6 +310,42 @@
 
 ---
 
-## 27. 
+## 27. ArticleService.java 생성 및 코드 작성
+	- src > main > java > com > crud > service > ArticleService.java 생성
+```java
+	package com.crud.service;
+	
+	import com.crud.model.ArticleVO;
+	
+	public interface ArticleService {
+
+		public void doWrite(ArticleVO article);
+	}
+```
+	
+---
+
+## 28. ArticleServiceImpl.java 생성 및 코드 작성
+	- src > main > java > com > crud > service > ArticleServiceImpl.java 생성
+```java
+	package com.crud.service;
+
+	import org.springframework.beans.factory.annotation.Autowired;
+	import org.springframework.stereotype.Service;
+	
+	import com.crud.mapper.ArticleMapper;
+	import com.crud.model.ArticleVO;
+	
+	@Service
+	public class ArticleServiceImpl implements ArticleService {
+		@Autowired
+		private ArticleMapper mapper;
+		
+		@Override
+		public void doWrite(ArticleVO article) {
+			mapper.doWrite(article);
+		}
+	}
+```
 ## 00. spring MVC 에 stylesheet 연결 방법
 [설명 잘되있는 블로그 보러가기](https://marindie.github.io/spring/Spring-Include-Resource-KR/#toc3)

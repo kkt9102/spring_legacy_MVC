@@ -1,0 +1,4 @@
+@charset "UTF-8";
+
+.menu_box_1 ul li {padding:10px; border:2px solid #666666;}
+.menu_box_1 ul li:hover {background:#666666; color:#ffffff;}
