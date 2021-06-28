@@ -3,7 +3,7 @@
 	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	"http://mybatis.org/dtd.mybatis-3-mapper.dtd">
 	
-	<Mapper namespace="com.crud.mapper.ArticleMapper">
+	<mapper namespace="com.crud.mapper.ArticleMapper">
 	<!-- 게시글 작성 -->
 	<insert id="doWrite">
 		INSERT INTO crud_article
@@ -11,4 +11,4 @@
 		body = #{body},
 		writer = #{writer}
 	</insert>
-	</Mapper>
+	</mapper>
