@@ -12,7 +12,7 @@
 	<div>${title}</div>
 	
 	<div class="write_form_box">
-		<form action="/article/doWrite" method="post">
+		<form action="/article/doWrite" method="post" id="write_form">
 			<div class="title_input">
 				<input type="text" name="title" placeholder="제목을 입력해주세요."/>
 			</div>
@@ -21,10 +21,16 @@
 			</div>
 		</form>
 		<div class='btn_box'>
-			<a href="" id="write_btn">글쓰기</a>
+			<a href="javascript:void(0);" id="write_btn">글쓰기</a>
 			<a href="" id="cencle_btn">취소</a>
 		</div>
 	</div>
 </section>
-
+<script>
+	$('#write_btn').click(function(e){
+		var form = $('#write_form');
+		form.attr("method","post");
+		form.submit();
+	})
+</script>
 <%@ include file="../include/footer.jsp" %>

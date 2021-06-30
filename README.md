@@ -392,5 +392,52 @@
 	- src > main > webapp > WEB-INF > views > article > list.jsp 추가
 	- src > main > webapp > WEB-INF > views > article > wrtie.jsp 추가
 **파일 경로의 경우 ArticleController와 같이 맞춰우어야한다. (@RequestMapping 이 article이라면 article 폴더 안에 해당 jsp 생성)**
+
+---
+
+## 31. 게시글 생성 페이지 (write.jsp) 코드
+```html
+	<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <!-- jstl core -->
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+	<%@ page session="false" %>
+
+	<%@ include file="../include/header.jsp" %>
+
+	<c:set var="title" value="새 글쓰기" />
+	
+	<section id="body">
+		<div>${title}</div>
+		
+		<div class="write_form_box">
+			<form action="/article/doWrite" method="post" id="write_form">
+				<div class="title_input">
+					<input type="text" name="title" placeholder="제목을 입력해주세요."/>
+				</div>
+				<div class="body_input">
+					<textarea name="body" id="" cols="30" rows="10" placeholder="내용을 입력해주세요."></textarea>
+				</div>
+			</form>
+			<div class='btn_box'>
+				<a href="javascript:void(0);" id="write_btn">글쓰기</a>
+				<a href="" id="cencle_btn">취소</a>
+			</div>
+		</div>
+	</section>
+	<script>
+		$('#write_btn').click(function(e){
+			var form = $('#write_form');
+			form.attr("method","post");
+			form.submit();
+		})
+		
+	</script>
+	<%@ include file="../include/footer.jsp" %>
+```
+
+---
+
+## 32. 
 ## 00. spring MVC 에 stylesheet 연결 방법
 [설명 잘되있는 블로그 보러가기](https://marindie.github.io/spring/Spring-Include-Resource-KR/#toc3)

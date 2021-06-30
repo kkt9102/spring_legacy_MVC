@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.crud.model.ArticleVO;
+
 // 해당 클레스는 컨트롤러
 @Controller
 // 공통 이동 페이지를 위한 RequestMapping
@@ -24,11 +26,12 @@ public class ArticleController {
 	// 게시글 생성 페이지 이동
 	@GetMapping("/write")
 	public void showWrite() {
-		return;
+		
 	}
 	// 게시글 생성 액션
-	@PostMapping("/doWirte")
-	public void doWrite() {
-		
+	@PostMapping("/doWrite")
+	public void doWrite(ArticleVO article) {
+//		String regDate = 
+		log.info("ArticleVO : " + article);
 	}
 }

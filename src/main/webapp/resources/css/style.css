@@ -2,3 +2,4 @@
 
 .menu_box_1 ul li {padding:10px; border:2px solid #666666;}
 .menu_box_1 ul li:hover {background:#666666; color:#ffffff;}
+.btn {display:block; border:1px solid #333333; padding:15px; text-align:center;}

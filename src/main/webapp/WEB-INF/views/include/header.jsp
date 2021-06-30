@@ -7,6 +7,7 @@
 <meta charset="UTF-8">
 <title>Spring Legacy CRUD</title>
 <%@ include file="inculdestylesheet.jsp" %>
+<%@ include file="includelibrary.jsp" %>
 </head>
 <body>
 

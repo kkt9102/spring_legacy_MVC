@@ -11,5 +11,5 @@
 <section id="body">
 	<div>${title}</div>
 	
-	<a href="write">새 글쓰기</a>
+	<a href="write" class="btn">새 글쓰기</a>
 </section>
