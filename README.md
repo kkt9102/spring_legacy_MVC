@@ -494,5 +494,42 @@
 
 ---
 
+## 33. 게시글 목록 구현 을 위한 기본작업
+	- ArticleMapper.java에 메서드 추가
+```java
+	public List<ArticleVO> getArticle();
+```
+
+---
+
+## 34. ArticleMapper.xml에 게시글 목록 구현을 위한 sql문 작성
+	- ArticleMapper.xml에 sql문 추가
+```java
+	<select id="getArticle" resultType="com.crud.model.ArticleVO">
+		SELECT * FROM crud_article 
+	</select>
+```
+
+---
+
+## 35. ArticleMapperTests.java로 테스트 진행
+	- ArticleMapperTests.java에 기존에 작성한 테스트 부분은 주석처리 혹은 삭제 후 진행
+```java
+		@Test
+	public void testGetArticle() {
+		
+		List list = mapper.getArticle();
+		// 향상된  for문
+		for(Object a : list) {
+			log.info("" + a);
+		}
+		// foreach&람다식
+		list.forEach(article -> log.info("" + article));
+	}
+```
+
+---
+
+## 36. 
 ## 00. spring MVC 에 stylesheet 연결 방법
 [설명 잘되있는 블로그 보러가기](https://marindie.github.io/spring/Spring-Include-Resource-KR/#toc3)

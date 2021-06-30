@@ -11,4 +11,8 @@
 		body = #{body},
 		writer = #{writer}
 	</insert>
+	<!-- 게시글 불러오기 -->
+	<select id="getArticle" resultType="com.crud.model.ArticleVO">
+		SELECT * FROM crud_article 
+	</select>
 	</mapper>

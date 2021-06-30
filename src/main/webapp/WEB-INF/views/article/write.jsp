@@ -20,9 +20,8 @@
 				<textarea name="body" id="" cols="30" rows="10" placeholder="내용을 입력해주세요."></textarea>
 			</div>
 			<div>
-				<input type="text" name="writer" placeholder="임시"/>
+				<input type="text" name="writer" placeholder="임시" value="작성자(임시)"/>
 			</div>
-			<button>버튼</button>
 		</form>
 		<div class='btn_box'>
 			<a href="javascript:void(0);" id="write_btn">글쓰기</a>
@@ -30,11 +29,18 @@
 		</div>
 	</div>
 </section>
-<!-- <script>
+<script>
+// 게시글 등록 action
 	$('#write_btn').click(function(e){
+		
 		var form = $('#write_form');
 		form.attr("method","post");
 		form.submit();
 	})
-</script> -->
+
+
+	
+	
+	
+</script>
 <%@ include file="../include/footer.jsp" %>
