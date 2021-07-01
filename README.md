@@ -530,6 +530,46 @@
 
 ---
 
-## 36. 
+## 36. ArticleController.java 에서 list 부분에 Model 파라미터 추가
+```java
+	// 변경전 코드
+		@GetMapping("/list")
+	public void showList() {
+		return;
+	}
+	
+	// 변경후 코드
+		@GetMapping("/list")
+	public void showList(Model model) {
+		model.addAttribute("article",articleService.getArticle());
+	}
+```
+
+---
+
+## 37. list.jsp에 게시글 정보 불러오기(뿌리기!)
+```html
+	<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <!-- jstl core -->
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page session="false" %>
+
+<%@ include file="../include/header.jsp" %>
+
+<c:set var="title" value="게시물 리스트" />
+
+<section id="body">
+	<div>${title}</div>
+	
+	<a href="write" class="btn">새 글쓰기</a>
+
+ 	<c:forEach items="${article}" var="article">
+		<div>
+			<c:out value="${article.title}"/>
+		</div>
+	</c:forEach>
+</section>
+```
 ## 00. spring MVC 에 stylesheet 연결 방법
 [설명 잘되있는 블로그 보러가기](https://marindie.github.io/spring/Spring-Include-Resource-KR/#toc3)

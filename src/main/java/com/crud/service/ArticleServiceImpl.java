@@ -1,5 +1,7 @@
 package com.crud.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,5 +19,10 @@ public class ArticleServiceImpl implements ArticleService {
 	@Override
 	public void doWrite(ArticleVO article) {
 		mapper.doWrite(article);
+	}
+
+	@Override
+	public List<ArticleVO> getArticle() {
+		return mapper.getArticle();
 	}
 }

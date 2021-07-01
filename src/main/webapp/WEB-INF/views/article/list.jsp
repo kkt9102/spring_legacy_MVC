@@ -12,4 +12,12 @@
 	<div>${title}</div>
 	
 	<a href="write" class="btn">새 글쓰기</a>
+<%-- 	<c:forEach items="${article}" var="article">
+		<c:out value="${article.title}" />
+	</c:forEach> --%>
+ 	<c:forEach items="${article}" var="article">
+		<div>
+			<c:out value="${article.title}"/>
+		</div>
+	</c:forEach>
 </section>
