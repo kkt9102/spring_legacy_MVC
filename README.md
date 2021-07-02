@@ -293,10 +293,12 @@
 		<!-- 게시글 작성 -->
 		<insert id="doWrite">
 			INSERT INTO crud_article
-			SET title = #{title},
+			SET regDate = NOW(),
+			updateDate = NOW(),
+			title = #{title},
 			body = #{body},
 			writer = #{writer}
-		</insert>
+	</insert>
 		</mapper>
 ```
 	- ArticleMapper.xml에 게시글 생성 시 필요한 sql문을 입력한다.
@@ -571,5 +573,31 @@
 	</c:forEach>
 </section>
 ```
+
+---
+
+## 38. 게시글 상세페이지 구현하기
+
+
+---
+
+## 39. list.jsp에서 해당 글을 클릭 시 글 상세페이지로 이동하게 설정
+[코드 보러가기](markdown_list/list.jsp_edit.md)
+
+---
+
+## 40. 게시글 상세정보를 불러오기 위해 ArticleMapper.java에 변수 추가하기
+```java
+	public ArticleVO getPage(int id);
+```
+
+---
+
+## 41. 게시글 상세정보 가져오기 (detail.jsp 구현)
+	- ArticleMapper.xml 에 게시물의 정보 (선택한 1개의 게시물 정보)를 불러올 sql문을 작성한다.
+	
+---
+
+## 42. 
 ## 00. spring MVC 에 stylesheet 연결 방법
 [설명 잘되있는 블로그 보러가기](https://marindie.github.io/spring/Spring-Include-Resource-KR/#toc3)

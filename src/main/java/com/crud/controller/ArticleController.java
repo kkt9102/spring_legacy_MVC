@@ -46,4 +46,10 @@ public class ArticleController {
 		// 글 작성 후 자동으로 게시물 리스트페이지로 호출
 		return "redirect:/article/list";
 	}
+	
+	// 게시글 상세페이지 이동
+	@GetMapping("/detail")
+	public void showDetail() {
+		
+	}
 }

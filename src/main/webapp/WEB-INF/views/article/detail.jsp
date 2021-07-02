@@ -6,16 +6,10 @@
 
 <%@ include file="../include/header.jsp" %>
 
-<c:set var="title" value="게시물 리스트" />
+<c:set var="title" value="상세페이지" />
 
 <section id="body">
-	<div>${title}</div>
+	<div style="display:none;">${title}</div>
+	<c:out value="${article.title}" />
 	
-	<a href="write" class="btn">새 글쓰기</a>
-
- 	<c:forEach items="${article}" var="article">
-		<a href="detail?id=${article.id}" style="display:block;">
-			<c:out value="${article.title}"/>
-		</a>
-	</c:forEach>
 </section>
