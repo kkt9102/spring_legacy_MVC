@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.crud.model.ArticleVO;
 import com.crud.service.ArticleService;
@@ -55,7 +56,17 @@ public class ArticleController {
 	
 	// 게시글 수정 페이지 이동
 	@GetMapping("/modify")
-	public void showModify() {
+	public void showModify(int id, Model model) {
+		// 게시글 수정을 위해서 게시글 상세페이지의 정보를 가져온다
+		model.addAttribute("detail",articleService.getPage(id));
+	}
+	// 게시글 수정 액션
+	@PostMapping("/doModify")
+	public String doModify(ArticleVO article, RedirectAttributes rttr) {
+		articleService.doModify(article);
 		
+		rttr.addFlashAttribute("result","modify success");
+		// 게시글 수정이 성공 한 후 게시물 리스트로 자동 이동
+		return "redirect:/article/list";
 	}
 }

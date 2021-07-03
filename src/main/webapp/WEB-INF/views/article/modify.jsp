@@ -12,35 +12,30 @@
 	<div>${title}</div>
 	
 	<div class="write_form_box">
-		<form action="/article/doWrite" method="post" id="write_form">
+		<form action="/article/doModify" method="post" id="modify_form">
+		<!-- 해당 게시글의 고유 id정보를 가저온다 -->
+		<input type="hidden" value="${detail.id}"/>
 			<div class="title_input">
-				<input type="text" name="title" placeholder="제목을 입력해주세요."/>
+				<input type="text" name="title" value="${detail.title}" />
 			</div>
 			<div class="body_input">
-				<textarea name="body" id="" cols="30" rows="10" placeholder="내용을 입력해주세요."></textarea>
+				<textarea name="body" id="" cols="30" rows="10" ><c:out value="${detail.body}" /></textarea>
 			</div>
-			<div>
-				<input type="text" name="writer" placeholder="임시" value="작성자(임시)" disabled="disabled"/>
-			</div>
+
 		</form>
 		<div class='btn_box'>
-			<a href="javascript:void(0);" id="write_btn" class="btn_2">글쓰기</a>
-			<a href="list" id="cencle_btn" class="btn_2">취소</a>
+			<a href="javascript:void(0);" id="modify_btn" class="btn_2">글수정</a>
+			<a href="detail?id=${param.id}" id="cencle_btn" class="btn_2">취소</a>
 		</div>
 	</div>
 </section>
 <script>
 // 게시글 등록 action
-	$('#write_btn').click(function(e){
+	$('#modify_btn').click(function(e){
 		
-		var form = $('#write_form');
+		var form = $('#modify_form');
 		form.attr("method","post");
 		form.submit();
 	})
-
-
-	
-	
-	
 </script>
 <%@ include file="../include/footer.jsp" %>

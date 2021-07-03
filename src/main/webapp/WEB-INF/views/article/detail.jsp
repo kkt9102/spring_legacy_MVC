@@ -26,8 +26,8 @@
 	</div>
 	<hr>
 	<div class="btn_box">
-		<a href="modify?id=${param.id}">수정</a>
-		<a href="list">뒤로가기</a>
+		<a href="modify?id=${param.id}" class="btn_2">수정</a>
+		<a href="list" class="btn_2">뒤로가기</a>
 	</div>
 	
 </section>

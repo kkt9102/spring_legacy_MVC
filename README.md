@@ -709,6 +709,12 @@
 
 ---
 
-## 49. 
+## 49. ArticleController.java에 modify 수정액션 추가하기
+[코드 보러가기](markdown_list/ArticleController.java_edit.md)
+
+---
+
+## 50. modify.jsp 퍼블리싱
+
 ## 00. spring MVC 에 stylesheet 연결 방법
 [설명 잘되있는 블로그 보러가기](https://marindie.github.io/spring/Spring-Include-Resource-KR/#toc3)
