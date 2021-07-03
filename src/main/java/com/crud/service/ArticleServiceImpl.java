@@ -25,7 +25,7 @@ public class ArticleServiceImpl implements ArticleService {
 	public List<ArticleVO> getArticle() {
 		return mapper.getArticle();
 	}
-	
+//	게시글 상세 불러오기 메소드 호출
 	@Override
 	public ArticleVO getPage(int id) {
 		return mapper.getPage(id);

@@ -49,7 +49,7 @@ public class ArticleController {
 	
 	// 게시글 상세페이지 이동
 	@GetMapping("/detail")
-	public void showDetail() {
-		
+	public void showDetail(int id, Model model) {
+		model.addAttribute("detail",articleService.getPage(id));
 	}
 }

@@ -18,7 +18,7 @@
 		SELECT * FROM crud_article 
 	</select>
 	<!-- 게시글 상세정보 불러오기 -->
-	<select id="">
+	<select id="getPage" resultType="com.crud.model.ArticleVO">
 		SELECT * FROM crud_article
 		WHERE id = #{id}
 	</select>

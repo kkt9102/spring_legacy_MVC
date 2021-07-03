@@ -38,15 +38,22 @@ public class ArticleMapperTests {
 //	}
 	
 // 게시물 불러오기 테스트
+//	@Test
+//	public void testGetArticle() {
+//		
+//		List list = mapper.getArticle();
+//		// 향상된  for문
+//		for(Object a : list) {
+//			log.info("" + a);
+//		}
+//		// foreach&람다식
+//		list.forEach(article -> log.info("" + article));
+//	}
+	
+//	게시물 정보 불러오기 테스트
 	@Test
-	public void testGetArticle() {
-		
-		List list = mapper.getArticle();
-		// 향상된  for문
-		for(Object a : list) {
-			log.info("" + a);
-		}
-		// foreach&람다식
-		list.forEach(article -> log.info("" + article));
+	public void testGetPage() {
+		int id = 5;
+		log.info("" + mapper.getPage(id));
 	}
 }

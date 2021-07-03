@@ -576,28 +576,61 @@
 
 ---
 
-## 38. 게시글 상세페이지 구현하기
-
-
----
-
-## 39. list.jsp에서 해당 글을 클릭 시 글 상세페이지로 이동하게 설정
+## 38. list.jsp에서 해당 글을 클릭 시 글 상세페이지로 이동하게 설정
 [코드 보러가기](markdown_list/list.jsp_edit.md)
 
 ---
 
-## 40. 게시글 상세정보를 불러오기 위해 ArticleMapper.java에 변수 추가하기
+## 39. 게시글 상세정보를 불러오기 위해 ArticleMapper.java에 변수 추가하기
 ```java
 	public ArticleVO getPage(int id);
 ```
 
 ---
 
-## 41. 게시글 상세정보 가져오기 (detail.jsp 구현)
+## 40. 게시글 상세정보를 불러오기 위한 ArticleMapper.xml에 sql문 추가하기
 	- ArticleMapper.xml 에 게시물의 정보 (선택한 1개의 게시물 정보)를 불러올 sql문을 작성한다.
-	
+```xml
+	<!-- 게시글 상세정보 불러오기 -->
+	<select id="getPage" resultType="com.crud.model.ArticleVO">
+		SELECT * FROM crud_article
+		WHERE id = #{id}
+	</select>
+```
+
 ---
 
-## 42. 
+## 41. ArticleMapperTests.java를 통해서 글이 불러와지는지 테스트 진행
+	- 테스트를 위한 코드 입력
+```java
+	//	게시물 정보 불러오기 테스트
+	@Test
+	public void testGetPage() {
+		int id = 5;
+		log.info("" + mapper.getPage(id));
+	}
+```
+
+---
+
+## 42. ArticleController.java에 해당 게시물의 정보를 담아서 보여주기
+	-변경 전 코드
+```java
+		@GetMapping("/detail")
+		public void showDetail() {
+		
+	}
+```
+	-변경 후 코드
+```java
+		@GetMapping("/detail")
+		public void showDetail(int id, Model model) {
+		model.addAttribute("detail",articleService.getPage(id));
+	}
+```
+
+---
+
+## 43. detail.jsp에 선택한 게시글의 정보보여주기 퍼블리싱
 ## 00. spring MVC 에 stylesheet 연결 방법
 [설명 잘되있는 블로그 보러가기](https://marindie.github.io/spring/Spring-Include-Resource-KR/#toc3)
