@@ -6,7 +6,7 @@
 
 <%@ include file="../include/header.jsp" %>
 
-<c:set var="title" value="새 글쓰기" />
+<c:set var="title" value="글 수정" />
 
 <section id="body">
 	<div>${title}</div>
@@ -20,7 +20,7 @@
 				<textarea name="body" id="" cols="30" rows="10" placeholder="내용을 입력해주세요."></textarea>
 			</div>
 			<div>
-				<input type="text" name="writer" placeholder="임시" value="작성자(임시)"/>
+				<input type="text" name="writer" placeholder="임시" value="작성자(임시)" disabled="disabled"/>
 			</div>
 		</form>
 		<div class='btn_box'>

@@ -52,4 +52,10 @@ public class ArticleController {
 	public void showDetail(int id, Model model) {
 		model.addAttribute("detail",articleService.getPage(id));
 	}
+	
+	// 게시글 수정 페이지 이동
+	@GetMapping("/modify")
+	public void showModify() {
+		
+	}
 }

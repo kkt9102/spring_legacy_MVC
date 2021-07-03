@@ -636,6 +636,9 @@
 
 ---
 
-## 44. 
+## 44. detail.jsp에서 '수정' 클릭 시 해당 게시물의 id값을 가진 modify로 이동 설정하기
+[코드 보러가기]()
+
+
 ## 00. spring MVC 에 stylesheet 연결 방법
 [설명 잘되있는 블로그 보러가기](https://marindie.github.io/spring/Spring-Include-Resource-KR/#toc3)

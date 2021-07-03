@@ -1,4 +1,5 @@
-## detail.jsp 간단한 퍼블리싱 작업
+## 게시글 수정으로 이동하기 위한 버튼 추가 구현
+
 ```html
 	<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -28,8 +29,13 @@
 		</div>
 		<hr>
 		<div class="btn_box">
+		<!-- ADD CODE -->
+		<!-- 해당 경로를 modify로만 지정해주면 modify로 이동 시 어떤 게시글에 대한 수정 페이지인지 알 수 없으므로 param을 이용하여 현재 게시물의 id값을 가져와서 이동경로에 넣어준다. -->
+			<a href="modify?id=${param.id}">수정</a>
+		<!-- ADD CODE -->
 			<a href="list">뒤로가기</a>
 		</div>
+	
 </section>
 	
 ```
