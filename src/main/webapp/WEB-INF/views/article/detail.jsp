@@ -16,10 +16,18 @@
 	<div style="display:none;">${title}</div>
 	<div class="title"><c:out value="${detail.title}" /></div>
 	<div class="detail_info">
-		<div class="writer"><span>작성자 : </span><c:out value="${detail.writer}" /></div>
-		<div class="reg_date"><span>생성날짜 : </span><c:out value="${detail.regDate}" /></div>
+		<div class="writer"><span>작성자 : </span><c:out value="${detail.writer}" /></div>&ensp;&ensp;
+		<div class="reg_date"><span>생성날짜 : </span><c:out value="${detail.regDate}" /></div>&ensp;&ensp;
+		<div class="update_date"><span>수정날짜 : </span><c:out value="${detail.updateDate}" /></div>
 	</div>
-	
-	
+	<hr>
+	<div class="body_content">
+		<c:out value="${detail.body}" />
+	</div>
+	<hr>
+	<div class="btn_box">
+		<a href="modify?id=${param.id}">수정</a>
+		<a href="list">뒤로가기</a>
+	</div>
 	
 </section>

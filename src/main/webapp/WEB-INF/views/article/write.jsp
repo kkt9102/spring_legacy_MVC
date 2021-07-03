@@ -25,7 +25,7 @@
 		</form>
 		<div class='btn_box'>
 			<a href="javascript:void(0);" id="write_btn">글쓰기</a>
-			<a href="" id="cencle_btn">취소</a>
+			<a href="list" id="cencle_btn">취소</a>
 		</div>
 	</div>
 </section>

@@ -632,5 +632,10 @@
 ---
 
 ## 43. detail.jsp에 선택한 게시글의 정보보여주기 퍼블리싱
+[코드 보러가기](markdown_list/detail.jsp_custom.md)
+
+---
+
+## 44. 
 ## 00. spring MVC 에 stylesheet 연결 방법
 [설명 잘되있는 블로그 보러가기](https://marindie.github.io/spring/Spring-Include-Resource-KR/#toc3)
