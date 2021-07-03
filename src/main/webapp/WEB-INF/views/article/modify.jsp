@@ -14,7 +14,8 @@
 	<div class="write_form_box">
 		<form action="/article/doModify" method="post" id="modify_form">
 		<!-- 해당 게시글의 고유 id정보를 가저온다 -->
-		<input type="hidden" value="${detail.id}"/>
+<%-- 			<input type="hidden" value="${detail.id}"/> --%>
+			<input type="hidden" name="id" value="${detail.id}" />
 			<div class="title_input">
 				<input type="text" name="title" value="${detail.title}" />
 			</div>
