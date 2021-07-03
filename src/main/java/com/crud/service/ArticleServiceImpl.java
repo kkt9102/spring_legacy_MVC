@@ -25,4 +25,9 @@ public class ArticleServiceImpl implements ArticleService {
 	public List<ArticleVO> getArticle() {
 		return mapper.getArticle();
 	}
+	
+	@Override
+	public ArticleVO getPage(int id) {
+		return mapper.getPage(id);
+	}
 }

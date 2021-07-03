@@ -17,5 +17,6 @@
 		<a href="detail?id=${article.id}" style="display:block;">
 			<c:out value="${article.title}"/>
 		</a>
+		<hr>
 	</c:forEach>
 </section>

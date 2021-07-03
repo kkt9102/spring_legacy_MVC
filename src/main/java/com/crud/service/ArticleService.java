@@ -8,5 +8,7 @@ public interface ArticleService {
 	// 게시글 등록 메서드
 	public void doWrite(ArticleVO article);
 	// 게시글 리스트 불러오기
-	public List<ArticleVO> getArticle(); 
+	public List<ArticleVO> getArticle();
+	// 게시글 정보 불러오기
+	public ArticleVO getPage(int id); 
 }
