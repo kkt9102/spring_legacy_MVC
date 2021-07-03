@@ -637,8 +637,78 @@
 ---
 
 ## 44. detail.jsp에서 '수정' 클릭 시 해당 게시물의 id값을 가진 modify로 이동 설정하기
-[코드 보러가기]()
+	- detail.jsp에서 링크 경로 잡아주기
+[코드 보러가기](markdown_list/detail.jsp_edit.md)
 
+	- ArticleController.java에 modify 경로 추가하기
+```java
+	// 게시글 수정 페이지 이동
+	@GetMapping("/modify")
+	public void showModify() {
+		
+	}
+```
+---
 
+## 45. ArticleMapper.java에 변수 추가해주기
+	-추가한 코드
+```java
+	public int doModify(ArticleVO article);
+```
+
+---
+
+## 46. ArticleMapper.xml에 게시글 수정을 위한 sql문 추가
+```xml
+	<!-- 게시글 수정 -->
+	<update id="doModify">
+		UPDATE crud_article
+		SET title = #{title},
+		body = #{body},
+		updateDate = NOW()
+		WHERE id = #{id}
+	</update>
+```
+
+---
+
+## 46. ArticleMapperTests.java를 통하여 글 수정 테스트
+```java
+		// 게시글 수정
+	@Test
+	public void testDoModify() {
+		ArticleVO article = new ArticleVO();
+		
+		article.setId(5);
+		article.setTitle("제목수정 테스트");
+		article.setBody("내용수정 테스트");
+		
+		int result = mapper.doModify(article);
+		log.info("result :" + result);
+	}
+```
+
+---
+
+## 47. ArticleService.java에 변수 추가
+	-추가한 코드
+```java
+	public int doModify(ArticleVO article);
+```
+
+---
+
+## 48. ArticleServiceImpl.java에 ArticleService.java에서 선언한 메서드 구현하는 코드 추가
+	-추가한 코드
+```java
+	public int doModify(ArticleVO article) {
+	
+		return mapper.modify(article);
+	}
+```
+
+---
+
+## 49. 
 ## 00. spring MVC 에 stylesheet 연결 방법
 [설명 잘되있는 블로그 보러가기](https://marindie.github.io/spring/Spring-Include-Resource-KR/#toc3)

@@ -51,9 +51,22 @@ public class ArticleMapperTests {
 //	}
 	
 //	게시물 정보 불러오기 테스트
+//	@Test
+//	public void testGetPage() {
+//		int id = 5;
+//		log.info("" + mapper.getPage(id));
+//	}
+	
+	// 게시글 수정
 	@Test
-	public void testGetPage() {
-		int id = 5;
-		log.info("" + mapper.getPage(id));
+	public void testDoModify() {
+		ArticleVO article = new ArticleVO();
+		
+		article.setId(5);
+		article.setTitle("제목수정 테스트");
+		article.setBody("내용수정 테스트");
+		
+		int result = mapper.doModify(article);
+		log.info("result :" + result);
 	}
 }

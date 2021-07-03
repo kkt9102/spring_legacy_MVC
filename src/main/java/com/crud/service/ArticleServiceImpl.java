@@ -30,4 +30,10 @@ public class ArticleServiceImpl implements ArticleService {
 	public ArticleVO getPage(int id) {
 		return mapper.getPage(id);
 	}
+// 게시글 수정 메소드 호출
+	@Override
+	public int doModify(ArticleVO article) {
+		
+		return mapper.doModify(article);
+	}
 }

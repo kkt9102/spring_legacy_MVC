@@ -22,4 +22,12 @@
 		SELECT * FROM crud_article
 		WHERE id = #{id}
 	</select>
+	<!-- 게시글 수정 -->
+	<update id="doModify">
+		UPDATE crud_article
+		SET title = #{title},
+		body = #{body},
+		updateDate = NOW()
+		WHERE id = #{id}
+	</update>
 	</mapper>
