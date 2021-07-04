@@ -69,4 +69,6 @@ public class ArticleController {
 		// 게시글 수정이 성공 한 후 게시물 리스트로 자동 이동
 		return "redirect:/article/list";
 	}
+	
+	// 게시글 삭제 액션
 }

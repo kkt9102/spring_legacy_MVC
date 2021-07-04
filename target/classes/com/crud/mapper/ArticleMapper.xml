@@ -30,4 +30,9 @@
 		body = #{body}
 		WHERE id = #{id}
 	</update>
+	<!-- 게시글 삭제 -->
+	<delete id="">
+		DELETE FROM crud_article
+		WHERE id = #{id} 
+	</delete>
 	</mapper>

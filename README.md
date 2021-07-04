@@ -720,6 +720,21 @@
 ---
 
 ## 51. 전체적인 페이지 구별을 위한 간단한 퍼블리싱 작업진행
-[변경된 부분 코드보러기가]()
+[변경된 부분 코드보러가기](https://github.com/kkt9102/spring_legacy_MVC/commit/5b808630d2b35147fcfeff8fb0c0d4d1f0010fa2)
+
+---
+
+## 52. 게시물 삭제를 위해 ArticleMapper.xml에 sql문 추가하시
+```xml
+	<!-- 게시글 삭제 -->
+	<delete id="">
+		DELETE FROM crud_article
+		WHERE id = #{id} 
+	</delete>
+```
+
+---
+
+## 53. 
 ## 00. spring MVC 에 stylesheet 연결 방법
 [설명 잘되있는 블로그 보러가기](https://marindie.github.io/spring/Spring-Include-Resource-KR/#toc3)
