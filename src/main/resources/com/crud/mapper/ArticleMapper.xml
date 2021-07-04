@@ -31,7 +31,7 @@
 		WHERE id = #{id}
 	</update>
 	<!-- 게시글 삭제 -->
-	<delete id="">
+	<delete id="doDelete">
 		DELETE FROM crud_article
 		WHERE id = #{id} 
 	</delete>

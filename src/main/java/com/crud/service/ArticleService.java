@@ -13,4 +13,6 @@ public interface ArticleService {
 	public ArticleVO getPage(int id);
 	// 게시글 수정
 	public int doModify(ArticleVO article);
+	// 게시글 삭제
+	public int doDelete(int id);
 }

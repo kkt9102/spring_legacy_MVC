@@ -71,4 +71,12 @@ public class ArticleController {
 	}
 	
 	// 게시글 삭제 액션
+	@PostMapping("/doDelete")
+	public String doDelete(int id, RedirectAttributes rttr) {
+		articleService.doDelete(id);
+		
+		rttr.addFlashAttribute("result","delete success");
+		// 게시글 삭제가 성공한 후 게시물 리스트로 자동 이동
+		return "redirect:/article/list";
+	}
 }

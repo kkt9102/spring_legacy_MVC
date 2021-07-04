@@ -727,7 +727,7 @@
 ## 52. 게시물 삭제를 위해 ArticleMapper.xml에 sql문 추가하시
 ```xml
 	<!-- 게시글 삭제 -->
-	<delete id="">
+	<delete id="doDelete">
 		DELETE FROM crud_article
 		WHERE id = #{id} 
 	</delete>
@@ -743,6 +743,58 @@
 
 ---
 
-## 54. 
+## 54. ArticleMapperTests.java를 통해 테스트 진행하기
+```.java
+	// 게시글 삭제
+	@Test
+	public void testDoDelete() {
+		int id = 6;
+		log.info("" + mapper.doDelete(id));
+	}
+```
+
+---
+
+## 55. ArticleService.java에 게시글 삭제 메서드 추가
+```java
+		// 게시글 삭제
+	public int doDelete(int id);
+```
+
+---
+
+## 56. ArticleServiceImpl.java에 게시글 삭제 메서드 호출하기
+```java
+	// 게시글 삭제 메소드 호출
+	@Override
+	public int doDelete(int id) {
+
+		return mapper.doDelete(id);
+	}
+```
+
+---
+
+## 57. ArticleController.java에 url 메핑 메소드 설정하기
+```java
+		// 게시글 삭제 액션
+	@PostMapping("/doDelete")
+	public String doDelete(int id, RedirectAttributes rttr) {
+		articleService.doDelete(id);
+		
+		rttr.addFlashAttribute("result","delete success");
+		// 게시글 삭제가 성공한 후 게시물 리스트로 자동 이동
+		return "redirect:/article/list";
+	}
+```
+
+---
+
+## 58. modify.jsp에 게시글 삭제 적용하기.md)
+[코드 보러가기](markdown_list/modify.jsp_edit.md)
+
+---
+
+## 59. 
 ## 00. spring MVC 에 stylesheet 연결 방법
 [설명 잘되있는 블로그 보러가기](https://marindie.github.io/spring/Spring-Include-Resource-KR/#toc3)

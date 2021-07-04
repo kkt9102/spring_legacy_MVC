@@ -57,16 +57,23 @@ public class ArticleMapperTests {
 //		log.info("" + mapper.getPage(id));
 //	}
 	
-	// 게시글 수정
+// 게시글 수정
+//	@Test
+//	public void testDoModify() {
+//		ArticleVO article = new ArticleVO();
+//		
+//		article.setId(5);
+//		article.setTitle("제목수정 테스트");
+//		article.setBody("내용수정 테스트");
+//		
+//		int result = mapper.doModify(article);
+//		log.info("result :" + result);
+//	}
+	
+// 게시글 삭제
 	@Test
-	public void testDoModify() {
-		ArticleVO article = new ArticleVO();
-		
-		article.setId(5);
-		article.setTitle("제목수정 테스트");
-		article.setBody("내용수정 테스트");
-		
-		int result = mapper.doModify(article);
-		log.info("result :" + result);
+	public void testDoDelete() {
+		int id = 6;
+		log.info("" + mapper.doDelete(id));
 	}
 }

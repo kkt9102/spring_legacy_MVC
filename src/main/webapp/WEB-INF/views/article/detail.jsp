@@ -7,11 +7,7 @@
 <%@ include file="../include/header.jsp" %>
 
 <c:set var="title" value="상세페이지" />
-<style>
-	.title {font-size:2rem; font-weight:bold; text-align:center;}
-	.detail_info {display:flex;}
-	.detail_info .writer::after {content:""; width:1px; height:100%; background:#000000;}
-</style>
+
 <section id="body">
 	<div style="display:none;">${title}</div>
 	<div class="title"><c:out value="${detail.title}" /></div>

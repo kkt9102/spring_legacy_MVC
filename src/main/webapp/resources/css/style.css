@@ -5,19 +5,24 @@
 .menu_box_1 ul li {padding:10px; border:2px solid #666666;}
 .menu_box_1 ul li:hover {background:#666666; color:#ffffff;}
 
-.btn_box {margin-top:30px;}
+.btn_box {margin-top:30px; display:flex}
 
 .btn {border:1px solid #333333; padding:10px;}
+.btn:not(#delete_btn) {margin-right:10px;}
 .btn:hover {background:#000000; color:#ffffff;}
+#delete_btn {margin-left:auto;}
 
 .page_title {margin-bottom:40px; font-size:2rem; font-weight:bold; text-align:center;}
 .article_list {border-top:2px solid #666666;}
 .article_list li a {padding:20px; display:block;}
 .article_list li:hover a {background:#efefef;}
 
-.write_form_box input[name="title"] {width:100%; font-size:1.5rem; margin-bottom:20px;}
-.write_form_box textarea {width:100%; resize:none;}
+.write_form_box input[name="title"], .modify_form_box input[name="title"] {width:100%; font-size:1.5rem; margin-bottom:20px;}
+.write_form_box textarea, .modify_form_box textarea {width:100%; resize:none;}
 
+.detail_info {display:flex;}
+.detail_info .writer::after {content:""; width:1px; height:100%; background:#000000;}
 .detail_info div {margin-top:30px; margin-bottom:15px; font-size:1.1rem; font-weight:bold;}
+.title {font-size:2rem; font-weight:bold; text-align:center;}
 
 .body_content {margin-top:10px; margin-bottom:10px; font-size:1.1rem;}

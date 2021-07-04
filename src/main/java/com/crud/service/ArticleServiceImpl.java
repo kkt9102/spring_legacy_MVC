@@ -36,4 +36,10 @@ public class ArticleServiceImpl implements ArticleService {
 		
 		return mapper.doModify(article);
 	}
+// 게시글 삭제 메소드 호출
+	@Override
+	public int doDelete(int id) {
+
+		return mapper.doDelete(id);
+	}
 }
