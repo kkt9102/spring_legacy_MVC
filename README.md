@@ -714,7 +714,10 @@
 
 ---
 
-## 50. modify.jsp 퍼블리싱
+## 50. modify.jsp 퍼블리싱 및 수정액션 적용하기
+[코드 보러가기](markdown_list/modify.jsp_create.md)
+
+---
 
 ## 00. spring MVC 에 stylesheet 연결 방법
 [설명 잘되있는 블로그 보러가기](https://marindie.github.io/spring/Spring-Include-Resource-KR/#toc3)
