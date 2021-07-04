@@ -18,7 +18,7 @@
 	</div>
 	<hr>
 	<div class="body_content">
-		<c:out value="${detail.body}" />
+		<c:out value="${detail.contents}" />
 	</div>
 	<hr>
 	<div class="btn_box">

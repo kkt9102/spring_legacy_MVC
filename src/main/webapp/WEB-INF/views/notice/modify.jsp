@@ -12,14 +12,14 @@
 	<div class="page_title">${title}</div>
 	
 	<div class="modify_form_box">
-		<form action="/article/doModify" method="post" id="modify_form">
+		<form action="/notice/doModify" method="post" id="modify_form">
 			<!-- 해당 게시글의 고유 id정보를 가저온다 -->
 			<input type="hidden" name="id" value="${detail.id}" />
 			<div class="title_input">
 				<input type="text" name="title" value="${detail.title}" />
 			</div>
 			<div class="body_input">
-				<textarea name="body" id="" cols="30" rows="10" ><c:out value="${detail.body}" /></textarea>
+				<textarea name="contents" id="" cols="30" rows="10" ><c:out value="${detail.contents}" /></textarea>
 			</div>
 		</form>
 		

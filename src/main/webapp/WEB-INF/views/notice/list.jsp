@@ -13,9 +13,9 @@
 
 	<a href="write" class="btn">새 글쓰기</a>
 	<ul class="article_list mar_top_30">
-		<c:forEach items="${article}" var="article">
-			<li><a href="detail?id=${article.id}" style="display: block;">
-					<c:out value="${article.title}" />
+		<c:forEach items="${notice}" var="notice">
+			<li><a href="detail?id=${notice.id}" style="display: block;">
+					<c:out value="${notice.title}" />
 			</a></li>
 			<hr>
 		</c:forEach>

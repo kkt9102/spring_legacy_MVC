@@ -27,11 +27,11 @@ public class NoticeVO {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public String getBody() {
+	public String getContents() {
 		return contents;
 	}
-	public void setBody(String body) {
-		this.contents = body;
+	public void setContents(String contents) {
+		this.contents = contents;
 	}
 	public String getWriter() {
 		return writer;
@@ -59,7 +59,7 @@ public class NoticeVO {
 	}
 	@Override
 	public String toString() {
-		return "NoticeVO [id=" + id + ", title=" + title + ", body=" + contents + ", writer=" + writer + ", regDate="
+		return "NoticeVO [id=" + id + ", title=" + title + ", contents=" + contents + ", writer=" + writer + ", regDate="
 				+ regDate + ", updateDate=" + updateDate + ", delStatus=" + delStatus + "]";
 	}
 	

@@ -12,15 +12,15 @@
 	<div class="page_title">${title}</div>
 	
 	<div class="write_form_box">
-		<form action="/article/doWrite" method="post" id="write_form">
+		<form action="/notice/doWrite" method="post" id="write_form">
 			<div class="title_input">
 				<input type="text" name="title" placeholder="제목을 입력해주세요."/>
 			</div>
 			<div class="body_input">
-				<textarea name="body" id="" cols="30" rows="10" placeholder="내용을 입력해주세요."></textarea>
+				<textarea name="contents" id="" cols="30" rows="10" placeholder="내용을 입력해주세요."></textarea>
 			</div>
 			<div>
-				<input type="hidden" name="writer" placeholder="임시" value="작성자(임시)"/>
+				<input type="hidden" name="writer" placeholder="임시" value="관리자"/>
 			</div>
 		</form>
 		<div class='btn_box'>
