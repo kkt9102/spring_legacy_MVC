@@ -719,5 +719,7 @@
 
 ---
 
+## 51. 전체적인 페이지 구별을 위한 간단한 퍼블리싱 작업진행
+[변경된 부분 코드보러기가]()
 ## 00. spring MVC 에 stylesheet 연결 방법
 [설명 잘되있는 블로그 보러가기](https://marindie.github.io/spring/Spring-Include-Resource-KR/#toc3)

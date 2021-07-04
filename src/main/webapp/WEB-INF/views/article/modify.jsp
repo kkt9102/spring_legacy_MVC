@@ -9,7 +9,7 @@
 <c:set var="title" value="글 수정" />
 
 <section id="body">
-	<div>${title}</div>
+	<div class="page_title">${title}</div>
 	
 	<div class="write_form_box">
 		<form action="/article/doModify" method="post" id="modify_form">
@@ -24,8 +24,8 @@
 
 		</form>
 		<div class='btn_box'>
-			<a href="javascript:void(0);" id="modify_btn" class="btn_2">글수정</a>
-			<a href="detail?id=${param.id}" id="cencle_btn" class="btn_2">취소</a>
+			<a href="javascript:void(0);" id="modify_btn" class="btn">글수정</a>
+			<a href="detail?id=${param.id}" id="cencle_btn" class="btn">취소</a>
 		</div>
 	</div>
 </section>

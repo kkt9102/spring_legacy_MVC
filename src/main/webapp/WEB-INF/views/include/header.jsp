@@ -15,6 +15,6 @@
 	<ul class="flex">
 		<li><a href="/">Home</a></li>
 		<li><a href="/article/list">Board</a></li>
-		<li><a href=""></a></li>
+		<li><a href="/notice/list">Notice</a></li>
 	</ul>
 </nav>

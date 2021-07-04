@@ -9,7 +9,7 @@
 <c:set var="title" value="새 글쓰기" />
 
 <section id="body">
-	<div>${title}</div>
+	<div class="page_title">${title}</div>
 	
 	<div class="write_form_box">
 		<form action="/article/doWrite" method="post" id="write_form">
@@ -20,12 +20,12 @@
 				<textarea name="body" id="" cols="30" rows="10" placeholder="내용을 입력해주세요."></textarea>
 			</div>
 			<div>
-				<input type="text" name="writer" placeholder="임시" value="작성자(임시)"/>
+				<input type="hidden" name="writer" placeholder="임시" value="작성자(임시)"/>
 			</div>
 		</form>
 		<div class='btn_box'>
-			<a href="javascript:void(0);" id="write_btn" class="btn_2">글쓰기</a>
-			<a href="list" id="cencle_btn" class="btn_2">취소</a>
+			<a href="javascript:void(0);" id="write_btn" class="btn">글쓰기</a>
+			<a href="list" id="cencle_btn" class="btn">취소</a>
 		</div>
 	</div>
 </section>
