@@ -795,6 +795,12 @@
 
 ---
 
-## 59. 
+## 59. notice 별도 게시판 생성을 위한 DB생성 작업
+[코드 보러가기](markdown_list/sql_add.md)
+
+---
+
+## 60. NoticeVO.java 생성 후 Getters and Setters 와 toString 설정하기
+
 ## 00. spring MVC 에 stylesheet 연결 방법
 [설명 잘되있는 블로그 보러가기](https://marindie.github.io/spring/Spring-Include-Resource-KR/#toc3)
