@@ -15,4 +15,5 @@ public interface ArticleMapper {
 	// doModify를 int로 설정한 이유는 수정 성공 시 값이 1, 실패 시 0으로 표기하기위함
 	public int doModify(ArticleVO article);
 	// 게시글 삭제
+	public int doDelete(int id);
 }

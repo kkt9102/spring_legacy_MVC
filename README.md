@@ -735,6 +735,14 @@
 
 ---
 
-## 53. 
+## 53. 게시물 삭제를 위해 ArticleMapper.java에 삭제를 위한 메서드 추가
+```java
+	// 게시글 삭제
+	public int doDelete(int id);
+```
+
+---
+
+## 54. 
 ## 00. spring MVC 에 stylesheet 연결 방법
 [설명 잘되있는 블로그 보러가기](https://marindie.github.io/spring/Spring-Include-Resource-KR/#toc3)
